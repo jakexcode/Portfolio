@@ -314,6 +314,11 @@ header {
     display: inline-block;
 }
 
+.section__subtitle--intro {
+font-size: var(--fs-body);
+text-transform: uppercase;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
