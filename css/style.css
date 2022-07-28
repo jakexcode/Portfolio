@@ -386,7 +386,7 @@ text-transform: uppercase;
     background-image: url("/img/design.jpg");
   }
   .bg2::after {
-    background: var(--clr-dark);
+    /* background: var(--clr-dark); */
     background-repeat: no-repeat;
     background-image: url("/img/buybitcoin_frontpage.PNG");
   }
@@ -396,10 +396,10 @@ text-transform: uppercase;
   }
 
 .my-services {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark);
     background-image: none;
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
 }
