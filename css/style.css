@@ -351,6 +351,50 @@ text-transform: uppercase;
 
 /* My Services */
 
+.container {
+    height: 100vh;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  perspective: 3px;
+}
+
+.service {
+    position: relative;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  margin: 0 auto;
+  }
+
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-20%) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .bg1::after {
+    
+    background-repeat: no-repeat;
+    background-image: url("/img/design.jpg");
+  }
+  .bg2::after {
+    background: var(--clr-dark);
+    background-repeat: no-repeat;
+    background-image: url("/img/buybitcoin_frontpage.PNG");
+  }
+  .bg3::after {
+    background-repeat: no-repeat;
+    background-image: url("/img/two_skyscrapers.jpg");
+  }
+
 .my-services {
     background-color: var(--clr-dark);
     background-image: none;
@@ -378,12 +422,31 @@ text-transform: uppercase;
     margin-bottom: 4em;
 }
 
-.service {
-    max-width: 250px;
-    margin: 0 auto;
+
+@media (max-width: 800px) {
+    .bg1::after {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("/img/design.jpg");
+      }
+      .bg2::after {
+        background-size: cover;
+        background: var(--clr-dark);
+        background-repeat: no-repeat;
+        background-image: url("/img/buybitcoin_frontpage.PNG");
+      }
+      .bg3::after {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("/img/two_skyscrapers.jpg");
+      }
+    
 }
 
-@media (min-width: 800px) {
+
+
+
+/* @media (min-width: 800px) {
     .services {
         display: flex;
         padding: 3em;
@@ -394,7 +457,7 @@ text-transform: uppercase;
     .service + .service {
         margin-left: 2em;
     }
-}
+} */
 
 /* About Me */
 
