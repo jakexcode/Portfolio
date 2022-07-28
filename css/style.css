@@ -381,16 +381,21 @@ text-transform: uppercase;
   }
 
   .bg1::after {
-    
+    transform: translateZ(-1px) scale(1.1);
+    z-index: -1;
     background-repeat: no-repeat;
     background-image: url("/img/design.jpg");
   }
   .bg2::after {
     /* background: var(--clr-dark); */
+    transform: translateZ(-1px) scale(1);
+    z-index: -1;
     background-repeat: no-repeat;
     background-image: url("/img/buybitcoin_frontpage.PNG");
   }
   .bg3::after {
+    transform: translateZ(-1px) scale(1.2);
+    z-index: -1;
     background-repeat: no-repeat;
     background-image: url("/img/two_skyscrapers.jpg");
   }
@@ -420,6 +425,37 @@ text-transform: uppercase;
 
 .services {
     margin-bottom: 4em;
+}
+
+.service__header__design {
+    
+    z-index: -1;
+    transform: translateY(25vh) translateZ(1px) scale(4);
+}
+
+.service__description__design {
+    z-index: -1;
+    transform: translateY(32vh) translateZ(1px) scale(1.5);
+}
+.service__header__ecom {
+    
+    z-index: -1;
+    transform: translateY(25vh) translateZ(1px) scale(4);
+}
+
+.service__description__ecom {
+    z-index: -1;
+    transform: translateY(34vh) translateZ(1px) scale(1.5);
+}
+.service__header__dev {
+    
+    z-index: -1;
+    transform: translateY(25vh) translateZ(1px) scale(4);
+}
+
+.service__description__dev {
+    z-index: -1;
+    transform: translateY(38vh) translateZ(1px) scale(1.5);
 }
 
 
