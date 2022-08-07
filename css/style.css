@@ -391,7 +391,7 @@ text-transform: uppercase;
     transform: translateZ(-1px) scale(1);
     z-index: -1;
     background-repeat: no-repeat;
-    background-image: url("/img/buybitcoin_frontpage.PNG");
+    background-image: url("/img/ecommerce_example.JPG");
   }
   .bg3::after {
     transform: translateZ(-1px) scale(1.2);
@@ -430,32 +430,32 @@ text-transform: uppercase;
 .service__header__design {
     
     z-index: -1;
-    transform: translateY(25vh) translateZ(1px) scale(4);
+    transform:translateZ(1px) scale(4);
 }
 
 .service__description__design {
     z-index: -1;
-    transform: translateY(32vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.5);
 }
 .service__header__ecom {
     
     z-index: -1;
-    transform: translateY(25vh) translateZ(1px) scale(4);
+    transform: translateY(2vh) translateZ(1px) scale(4);
 }
 
 .service__description__ecom {
     z-index: -1;
-    transform: translateY(34vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.5);
 }
 .service__header__dev {
     
     z-index: -1;
-    transform: translateY(25vh) translateZ(1px) scale(4);
+    transform: translateY(2vh) translateZ(1px) scale(4);
 }
 
 .service__description__dev {
     z-index: -1;
-    transform: translateY(38vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.5);
 }
 
 
@@ -469,7 +469,7 @@ text-transform: uppercase;
         background-size: cover;
         background: var(--clr-dark);
         background-repeat: no-repeat;
-        background-image: url("/img/buybitcoin_frontpage.PNG");
+        background-image: url("/img/ecommerce_example.JPG");
       }
       .bg3::after {
         background-size: cover;
