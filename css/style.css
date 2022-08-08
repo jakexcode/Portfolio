@@ -161,7 +161,6 @@ header {
     background: var(--clr-accent);
     box-shadow: var(--bs);
     max-height: 100px;
-    width: 750px;
     display: flex;
     justify-content: center;
 }
@@ -381,19 +380,22 @@ text-transform: uppercase;
   }
 
   .bg1::after {
+    background-size: cover;
     transform: translateZ(-1px) scale(1.1);
     z-index: -1;
     background-repeat: no-repeat;
     background-image: url("/img/design.jpg");
   }
   .bg2::after {
+    background-size: cover;
     /* background: var(--clr-dark); */
     transform: translateZ(-1px) scale(1);
     z-index: -1;
     background-repeat: no-repeat;
-    background-image: url("/img/ecommerce_example.JPG");
+    background-image: url("/img/ecommerce_pic.jpg");
   }
   .bg3::after {
+    background-size: cover;
     transform: translateZ(-1px) scale(1.2);
     z-index: -1;
     background-repeat: no-repeat;
@@ -427,55 +429,88 @@ text-transform: uppercase;
     margin-bottom: 4em;
 }
 
+
+
 .service__header__design {
     
     z-index: -1;
-    transform:translateZ(1px) scale(4);
+    transform:translateZ(1px) scale(1.5);
 }
 
 .service__description__design {
     z-index: -1;
-    transform: translateY(10vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.2);
 }
 .service__header__ecom {
     
     z-index: -1;
-    transform: translateY(2vh) translateZ(1px) scale(4);
+    transform: translateY(2vh) translateZ(1px) scale(1.5);
 }
 
 .service__description__ecom {
     z-index: -1;
-    transform: translateY(10vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.2);
 }
 .service__header__dev {
     
     z-index: -1;
-    transform: translateY(2vh) translateZ(1px) scale(4);
+    transform: translateY(2vh) translateZ(1px) scale(1.5);
 }
 
 .service__description__dev {
     z-index: -1;
-    transform: translateY(10vh) translateZ(1px) scale(1.5);
+    transform: translateY(10vh) translateZ(1px) scale(1.2);
 }
 
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .bg1::after {
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url("/img/design.jpg");
       }
       .bg2::after {
-        background-size: cover;
-        background: var(--clr-dark);
+         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url("/img/ecommerce_example.JPG");
+        background-image: url("/img/ecommerce_pic.JPG");
       }
       .bg3::after {
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url("/img/two_skyscrapers.jpg");
       }
+
+
+      .service__header__design {
+    
+        z-index: -1;
+        transform:translateZ(1px) scale(4);
+    }
+    
+    .service__description__design {
+        z-index: -1;
+        transform: translateY(10vh) translateZ(1px) scale(1.5);
+    }
+    .service__header__ecom {
+        
+        z-index: -1;
+        transform: translateY(2vh) translateZ(1px) scale(4);
+    }
+    
+    .service__description__ecom {
+        z-index: -1;
+        transform: translateY(10vh) translateZ(1px) scale(1.5);
+    }
+    .service__header__dev {
+        
+        z-index: -1;
+        transform: translateY(2vh) translateZ(1px) scale(4);
+    }
+    
+    .service__description__dev {
+        z-index: -1;
+        transform: translateY(10vh) translateZ(1px) scale(1.5);
+    }
     
 }
 
