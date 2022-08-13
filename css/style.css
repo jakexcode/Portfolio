@@ -481,21 +481,7 @@ font-size: var(--fs-h1);
 
 
 @media (min-width: 800px) {
-    .bg1::after {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("/img/design.jpg");
-      }
-      .bg2::after {
-         background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("/img/ecommerce_pic.JPG");
-      }
-      .bg3::after {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("/img/two_skyscrapers.jpg");
-      }
+    
 
 
       .service__header__design {
