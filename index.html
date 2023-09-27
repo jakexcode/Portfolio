@@ -1,139 +1,195 @@
 <!DOCTYPE html>
-<html lang = en>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jake Bedell Portfolio Website</title>
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-         
-        <link rel="stylesheet" href="css/style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake Bedell Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    </head>
-        <body>
-            <header>
-                 <div class="logo">
-                    <img class="logo--img" src="img/AtomOdyssey_LOGO.png" alt="">
-                 </div>
-                 <button class="nav-toggle" aria-label="toggle-navigation">
-                    <span class="hamburger"></span>
-                 </button>
-                 <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
-                        <li class="nav__item"> <a href="#services" class="nav__link">My Services</a></li>
-                        <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"> <a href="#work" class="nav__link">My Work</a></li>
-                    </ul>
-                 </nav>
-            </header>
-            
-            <!-- Introduction -->
-            <section class="intro" id="home">
-                <h1 class="section__title section__title--intro">
-                    Hi, I am <strong>Jake Bedell</strong>
-                </h1>
-                <p class="section__subtitle section__subtitle--intro">DevOps / full-stack dev</p>
-                <img src="img/profile-pic__portfolio.jpg" alt="picture of Jake Bedell at Hilton Head" class="intro__img" >
-            </section>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo--img" src="img/AtomOdyssey_LOGO.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle-navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <!-- My Services -->
-            <div class="my-services container" id="services">
-                <h2 class="section__title section__title--services">What I do</h2>
-                <div class="services">
-                    <section class="service parallax bg1">
-                        <h3 class="service__header__design">Design + Development</h3>
-                        <p class="service__description__design">All stages of design and development from database setup and functionality
-                            to deployment and domain management.
-                        </p>
-                    </section> <!-- /service-->
-                    <section class="service parallax bg2">
-                        <h3 class="service__header__ecom">E-commerce</h3>
-                        <p class="service__description__ecom">
-                            - Create beatiful store fronts that engage customers and offer a seamless experience
-                            for the user. <br/> - Keep track of all essential data with cloud based databases such as firebase. <br/> - Offer different pay options
-                            with API's such as Stripe or Coinbase-Commerce.
-                        </p>
-                    </section> <!-- /service-->
-                    <section class="service parallax bg3">
-                        <h3 class="service__header__dev">DevOps (AWS)</h3>
-                        <p class="service__description__dev">Deploy and maintain apps with cloud services like AWS Amplify, EC2, Beanstalk, and Kubernetes.
-                        </p>
-                    </section> <!-- /service-->
-                </div>  <!-- /services -->
-               
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Jake Bedell</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        DevOps / full-stack dev
+      </p>
+      <img
+        src="img/profile-pic__portfolio.jpg"
+        alt="picture of Jake Bedell at Hilton Head"
+        class="intro__img"
+      />
+    </section>
 
-                <!-- <a href="#work" class="btn"> My Work</a> -->
-            </div>
+    <!-- My Services -->
+    <div class="my-services container" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <section class="service parallax bg1">
+          <card>
+            <h3 class="service__header__design">Design + Development</h3>
 
-                <!-- About Me -->
-                <section class="about-me" id="about">
-                    <h2 class="section__title section__title--about">Who I Am</h2>
-                    <p class="section__subtitle section__subtitle--about">
-                        Designer and Developer based out of Greenville
-                    </p>
+            <p class="service__description__design">
+              All stages of design and development from database setup and
+              functionality to deployment and domain management.
+            </p></card
+          >
+        </section>
+        <!-- /service-->
+        <section class="service parallax bg2">
+          <h3 class="service__header__ecom">E-commerce</h3>
 
-                    <div class="about-me__body">
-                        <p>I am a software engineer with a passion for design and development. I enjoy learning about new technologies and providing
-                            users with a phenomenal experience. When I am not programming, I like to pass the time playing music, taking my dog to 
-                            the park and learning foreign languages. 
-                        </p>
-                    </div>
-                    <img src="img/callie.jpeg" alt="callie in the field" class="about-me__callie">  
-            </section>
+          <p class="service__description__ecom">
+            - Create beatiful store fronts that engage customers and offer a
+            seamless experience for the user. <br />
+            - Keep track of all essential data with cloud based databases such
+            as firebase. <br />
+            - Offer different pay options with API's such as Stripe or
+            Coinbase-Commerce.
+          </p>
+        </section>
+        <!-- /service-->
+        <section class="service parallax bg3">
+          <h3 class="service__header__dev">DevOps (AWS)</h3>
+          <p class="service__description__dev">
+            Deploy and maintain apps with cloud services like AWS Amplify, EC2,
+            Beanstalk, and Kubernetes.
+          </p>
+        </section>
+        <!-- /service-->
+      </div>
+      <!-- /services -->
 
-            <!-- My Work -->
-            <section class="my-work" id="work">
-                <h2 class="section__title section__title--work">My Work</h2>
-                <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+      <!-- <a href="#work" class="btn"> My Work</a> -->
+    </div>
 
-                <div class="portfolio">
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer and Developer based out of Greenville
+      </p>
 
-                    <!-- Portfolio Item 01 -->
-                    <a href="https://buybitcoinpostage.com" target ="_blank" class="portfolio__item">
-                        <img src="/img/BBP_Front_Page.PNG" alt="" class="portfolio__img">
-                    </a>
-                    <!-- Portfolio Item 02 -->
-                    <!-- <a href="#" class="portfolio__item">
+      <div class="about-me__body">
+        <p>
+          I am a software engineer with a passion for design and development. I
+          enjoy learning about new technologies and providing users with a
+          phenomenal experience. When I am not programming, I like to pass the
+          time playing music, taking my dog to the park and learning foreign
+          languages.
+        </p>
+      </div>
+      <img
+        src="img/callie.jpeg"
+        alt="callie in the field"
+        class="about-me__callie"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio Item 01 -->
+        <a
+          href="https://coinflippostage.com"
+          target="_blank"
+          class="portfolio__item"
+        >
+          <img
+            src="/img/coinflippostage_front_page.png"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Portfolio Item 02 -->
+        <!-- <a href="#" class="portfolio__item">
                         <img src="portfolio-02.jpg" alt="" class="portfolio__img">
                     </a> -->
-                    <!-- Portfolio Item 03 -->
-                    <!-- <a href="#" class="portfolio__item">
+        <!-- Portfolio Item 03 -->
+        <!-- <a href="#" class="portfolio__item">
                         <img src="portfolio-03.jpg" alt="" class="portfolio__img">
                     </a> -->
-                    <!-- Portfolio Item 04 -->
-                    <!-- <a href="#" class="portfolio__item">
+        <!-- Portfolio Item 04 -->
+        <!-- <a href="#" class="portfolio__item">
                         <img src="portfolio-04.jpg" alt="" class="portfolio__img">
                     </a> -->
-                </div>
-            </section>
+      </div>
+    </section>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <a href="mailto:jakecbedell@gmail.com" class="footer__link">jakecbedell@gmail.com</a>
-                <ul class="social-list">
-                    <li class="social-list__item">
-                        <a class="social-list__link" target="_blank" href="https://github.com/jakexcode">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a class="social-list__link" target="_blank" href="https://www.linkedin.com/in/jake-bedell/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <!-- <li class="social-list__item">
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jakecbedell@gmail.com" class="footer__link"
+        >jakecbedell@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            target="_blank"
+            href="https://github.com/jakexcode"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/jake-bedell/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- <li class="social-list__item">
                         <a class="social-list__link" target="_blank" href="https://twitter.com/">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li> -->
-                </ul>
-            </footer>
+      </ul>
+    </footer>
 
-            <!-- Custom JavaScript -->
-            <script src="js/index.js"></script>
-        </body>
+    <!-- Custom JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
